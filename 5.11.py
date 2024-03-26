@@ -16,9 +16,4 @@
 
 n = int(input())
 
-ed = n % 10
-des = int( (n % 100 - ed) / 10 )
-sot = int( (n % 1000 - des * 10 - ed) / 100 )
-t = int ( (n % 10000 - sot * 100 - des * 10 - ed) / 1000 )
-
-print((n // 100 + n % 100) / 2)
+print((n - 1) // 100 + 1)
